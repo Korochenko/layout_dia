@@ -194,12 +194,187 @@
       </section>
 
       <section class="testimonials">
-        <h2>What people say</h2>
+        <p class="testimonials__text">testimonials</p>
+        <h2 class="testimonials__title">What people say</h2>
+
+        <div class="testimonials__cards">
+          <article class="testimonials__card">
+            <div class="card__wrapper">
+              <div class="card__wrapper__blob card__wrapper__blob--top"></div>
+              <div
+                class="card__wrapper__blob card__wrapper__blob--bottom"
+              ></div>
+              <div class="card__wrapper__image">
+                <img
+                  class="card__wrapper__image__img"
+                  src="/src/images/what-people-say/person1.png"
+                  alt="#"
+                />
+              </div>
+            </div>
+            <img
+              class="testimonials__card__quote"
+              src="/src/images/features/quoute.png"
+              alt="#"
+            />
+            <p class="testimonials__card__description">
+              AIR is an exceptional agency that leads with creative talent, first-class account servicing.
+            </p>
+            <p class="testimonials__card__name">Azadeh Hawkins</p>
+            <p class="testimonials__card__position">Hawkins Consulting</p>
+          </article>
+          <article class="testimonials__card">
+            <div class="card__wrapper">
+              <div class="card__wrapper__blob card__wrapper__blob--top"></div>
+              <div
+                class="card__wrapper__blob card__wrapper__blob--bottom"
+              ></div>
+              <div class="card__wrapper__image">
+                <img
+                  class="card__wrapper__image__img"
+                  src="/src/images/what-people-say/person2.png"
+                  alt="#"
+                />
+              </div>
+            </div>
+            <img
+              class="testimonials__card__quote"
+              src="/src/images/features/quoute.png"
+              alt="#"
+            />
+            <p class="testimonials__card__description">
+              AIR raises the agency bar to stratospheric heights on both creative output and client service.
+            </p>
+            <p class="testimonials__card__name">Michel Grover</p>
+            <p class="testimonials__card__position">Hulu</p>
+          </article>
+          <article class="testimonials__card">
+            <div class="card__wrapper">
+              <div class="card__wrapper__blob card__wrapper__blob--top"></div>
+              <div
+                class="card__wrapper__blob card__wrapper__blob--bottom"
+              ></div>
+              <div class="card__wrapper__image">
+                <img
+                  class="card__wrapper__image__img"
+                  src="/src/images/what-people-say/person3.png"
+                  alt="#"
+                />
+              </div>
+            </div>
+            <img
+              class="testimonials__card__quote"
+              src="/src/images/features/quoute.png"
+              alt="#"
+            />
+            <p class="testimonials__card__description">
+              AIR’s ideas are refreshing and out of the box. Authentic team that
+              focuses on the important path of the brand.
+            </p>
+            <p class="testimonials__card__name">Tal Gilad</p>
+            <p class="testimonials__card__position">Teach for America</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="vision">
+        <h2 class="vision__title">
+          Vision,
+          <br />
+          Passion,
+          <br />
+          Results
+        </h2>
+        <p class="vision__description">
+          We are sure that first-rate
+          <br />
+          job is possible only if all
+          <br />
+          three components are
+          <br />
+          united.
+        </p>
+        <button class="vision__btn">Apply</button>
       </section>
 
     </main>
 
-    <footer></footer>
+    <footer class="footer">
+      <h2 class="footer__title">
+        Send us a
+        <br>
+        message
+      </h2>
+
+      <form action="send-message" class="footer__form">
+        <input
+        type="email"
+        class="footer__form__input footer__form__input--email"
+        >
+        <input
+        type="text"
+        placeholder="Your name"
+        class="footer__form__input footer__form--name"
+        >
+        <input
+        type="text"
+        placeholder="Your message"
+        class="footer__form__input footer__form__input--message"
+        >
+
+      </form>
+
+      <button class="footer__button">Send</button>
+
+      <div class="footer__contact">
+        <h2 class="footer__contact__title" >
+          Contact us
+        </h2>
+
+        <div class="footer__contact__contacts">
+          <div class="footer__contact__contacts__links">
+            <p class="footer__contact__contacts__links__text">Call us</p>
+            <a class="footer__contact__contacts__links__adress">654 321 987</a>
+          </div>
+
+          <div class="footer__contact__contacts__links">
+            <p class="footer__contact__contacts__links__text">Visit us</p>
+            <a class="footer__contact__contacts__links__adress">2905 West Drive, <br> Buffalo Grove</a>
+          </div>
+
+          <div class="footer__contact__contacts__medias">
+            <p class="footer__contact__contacts__medias__text">our socials</p>
+            <div class="footer__contact__contacts__medias__network">
+              <a href="#">
+                <img src="/src/images/social_media_icons/facebook.png" alt="#">
+              </a>
+              <a href="#">
+                <img src="/src/images/social_media_icons/twitter.png" alt="#">
+              </a>
+              <a href="#">
+                <img src="/src/images/social_media_icons/instagram.png" alt="#">
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+      <div class="footer__links">
+        <a href="#">
+          <img src="/src/images/logo/dia-logo.svg" alt="logo">
+        </a>
+        <p class="footer__links__link">About us</p>
+        <p class="footer__links__link">Home</p>
+        <p class="footer__links__link">Work</p>
+        <p class="footer__links__link">Services</p>
+        <p class="footer__links__link">Contact us</p>
+      </div>
+
+
+    </footer>
     <script src="src/scripts/main.js"></script>
   </body>
 </html>
