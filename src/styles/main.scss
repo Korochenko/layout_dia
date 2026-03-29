@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   font-family: 'MyCustomFont';
+  list-style-type: none;
 }
 
 html {
@@ -35,6 +36,7 @@ button {
   gap: 120px;
   align-items: center;
   overflow-x: hidden;
+  padding: 0 20px;
 
   @include on-tablet {
     gap: 148px;
@@ -63,17 +65,48 @@ button {
       margin-bottom: 56px;
     }
 
+    @include on-small-desktop {
+      justify-content: space-between;
+    }
+
     &__icons {
       display: flex;
       align-items: center;
       flex: 1;
       justify-content: flex-start;
       gap: 32px;
+
+      @include on-small-desktop {
+        flex: none;
+      }
+    }
+
+    &__navigation {
+      display: none;
+
+      @include on-small-desktop {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      &__links {
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 150%;
+        letter-spacing: 0.23em;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+      }
     }
 
     &__hire-us {
       position: relative;
       transition: 0.2s;
+      display: block;
+
+      width: 51px;
 
       &::after {
         content: '';
@@ -93,6 +126,15 @@ button {
     }
   }
 
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    @include on-small-desktop {
+      height: 100%;
+      flex-direction: row;
+    }
+  }
+
   &__middle {
     display: flex;
     flex-direction: column;
@@ -100,6 +142,11 @@ button {
     height: 360px;
     color: #fff;
     margin-bottom: 48px;
+
+    @include on-small-desktop {
+      height: 100%;
+      justify-content: center;
+    }
 
     &__title {
       font-weight: 600;
@@ -159,24 +206,41 @@ button {
       top: 60%;
     }
 
-    &__arrow {
-      width: 24px;
-      height: 24px;
+    @include on-small-desktop {
+      top: 15%;
+      left: 50%;
     }
 
-    &__title {
-      font-weight: 700;
-      font-size: 13px;
-      letter-spacing: 0.23em;
-      text-transform: uppercase;
-      text-align: center;
-      margin-bottom: 8px;
+    @include on-small-desktop {
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: center;
+      gap: 24px;
     }
 
-    &__description {
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 140%;
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      &__arrow {
+        width: 24px;
+        height: 24px;
+      }
+
+      &__title {
+        font-weight: 700;
+        font-size: 13px;
+        letter-spacing: 0.23em;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 8px;
+      }
+
+      &__description {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+      }
     }
   }
 }
@@ -192,6 +256,10 @@ button {
 
 .icon--burger {
   background-image: url(../images/logo/burger.svg);
+
+  @include on-small-desktop {
+    display: none;
+  }
 }
 
 .slider {
@@ -201,6 +269,10 @@ button {
   &__button {
     border-radius: 50%;
     margin-bottom: 16px;
+
+    @include on-small-desktop {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -208,7 +280,6 @@ button {
 
 /* #region who we are */
 .who-we-are {
-  padding: 0 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -244,7 +315,6 @@ button {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 0 20px;
   gap: 56px;
   background-color: #fff;
   border-radius: 16px;
@@ -306,7 +376,6 @@ button {
   width: stretch;
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
 
   &__name {
     font-weight: 700;

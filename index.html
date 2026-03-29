@@ -34,55 +34,98 @@
             class="icon icon--burger"
           ></a>
         </div>
-        <a
-          class="header__top__hire-us"
-          href="#hire-us"
-        >
-          Hire us
-        </a>
+
+        <nav class="header__top__navigation">
+          <li class="header__top__navigation__links">
+            <a
+              href="#about-us"
+              class="header__top__navigation__links__link"
+            >
+              About us
+            </a>
+          </li>
+          <li class="header__top__navigation__links">
+            <a
+              href="#services"
+              class="header__top__navigation__links__link"
+            >
+              Services
+            </a>
+          </li>
+          <li class="header__top__navigation__links">
+            <a
+              href="#testimonials"
+              class="header__top__navigation__links__link"
+            >
+              Testimonials
+            </a>
+          </li>
+          <li class="header__top__navigation__links">
+            <a
+              href="#contact-us"
+              class="header__top__navigation__links__link"
+            >
+              Contact Us
+            </a>
+          </li>
+        </nav>
+
+        <div>
+          <a
+            class="header__top__hire-us"
+            href="#hire-us"
+          >
+            Hire us
+          </a>
+        </div>
       </div>
 
-      <div class="header__middle">
-        <h1 class="header__middle__title">Strategic Agency</h1>
-        <p class="header__middle__description">
-          We believe in the power of bold ideas that can solve business
-          challenges.
-        </p>
-        <button class="header__middle__button">Learn more</button>
-      </div>
-
-      <div class="header__bottom">
-        <div class="slider">
-          <button class="slider__button">
-            <img
-              class="slider__button__arrow"
-              src="/src/images/slider/arrow-left.svg"
-              alt="left"
-            />
-          </button>
-          <button class="slider__button">
-            <img
-              class="slider__button__arrow"
-              src="/src/images/slider/arrow-right.svg"
-              alt="left"
-            />
-          </button>
+      <div class="header__wrapper">
+        <div class="header__middle">
+          <h1 class="header__middle__title">Strategic Agency</h1>
+          <p class="header__middle__description">
+            We believe in the power of bold ideas that can solve business
+            challenges.
+          </p>
+          <button class="header__middle__button">Learn more</button>
         </div>
 
-        <h2 class="header__bottom__title">INtro</h2>
+        <div class="header__bottom">
+          <div class="slider">
+            <button class="slider__button">
+              <img
+                class="slider__button__arrow"
+                src="/src/images/slider/arrow-left.svg"
+                alt="left"
+              />
+            </button>
+            <button class="slider__button">
+              <img
+                class="slider__button__arrow"
+                src="/src/images/slider/arrow-right.svg"
+                alt="left"
+              />
+            </button>
+          </div>
+          <div class="header__bottom__wrapper">
+            <h2 class="header__bottom__wrapper__title">INtro</h2>
 
-        <p class="header__bottom__description">
-          By the same illusion which lifts the
-          <br />
-          horizon.
-        </p>
+            <p class="header__bottom__wrapper__description">
+              By the same illusion which lifts the
+              horizon.
+            </p>
+          </div>
+        </div>
       </div>
     </header>
 
     <aside></aside>
 
     <main class="main">
-      <section class="who-we-are">
+      <section
+        class="who-we-are"
+        id="about-us"
+      >
         <h2 class="who-we-are__title">Who we are</h2>
         <p class="who-we-are__description">
           We embrace a strategic approach to creative ideas. We are interested
@@ -140,7 +183,10 @@
         </article>
       </section>
 
-      <section class="services">
+      <section
+        class="services"
+        id="services"
+      >
         <p class="services__name">services</p>
         <h2 class="services__title">
           Air is a full
@@ -245,7 +291,10 @@
         </div>
       </section>
 
-      <section class="testimonials">
+      <section
+        class="testimonials"
+        id="testimonials"
+      >
         <p class="testimonials__text">testimonials</p>
         <h2 class="testimonials__title">What people say</h2>
 
@@ -384,7 +433,10 @@
         <button class="footer__button">Send</button>
       </form>
 
-      <div class="footer__contact">
+      <div
+        class="footer__contact"
+        id="contact-us"
+      >
         <h2 class="footer__contact__title">Contact us</h2>
 
         <div class="footer__contact__contacts">
