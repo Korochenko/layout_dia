@@ -111,8 +111,7 @@
             <h2 class="header__bottom__wrapper__title">INtro</h2>
 
             <p class="header__bottom__wrapper__description">
-              By the same illusion which lifts the
-              horizon.
+              By the same illusion which lifts the horizon.
             </p>
           </div>
         </div>
@@ -142,64 +141,68 @@
           expertise
         </h2>
 
-        <article class="our-expertise__section">
-          <img
-            class="our-expertise__section__image"
-            src="/src/images/who-we-are/image1.png"
-            alt="who-we-are"
-          />
-          <h3 class="our-expertise__section__title">Branding</h3>
-          <p class="our-expertise__section__description">
-            We create additional value for companies, products, services as well
-            as verbal and visual ways to deliver it to the audience.
-          </p>
-        </article>
+        <div class="our-expertise__wrapper">
+          <article class="our-expertise__section">
+            <img
+              class="our-expertise__section__image"
+              src="/src/images/who-we-are/image1.png"
+              alt="who-we-are"
+            />
+            <h3 class="our-expertise__section__title">Branding</h3>
+            <p class="our-expertise__section__description">
+              We create additional value for companies, products, services as
+              well as verbal and visual ways to deliver it to the audience.
+            </p>
+          </article>
 
-        <article class="our-expertise__section">
-          <img
-            class="our-expertise__section__image"
-            src="/src/images/who-we-are/image2.png"
-            alt="who-we-are"
-          />
-          <h3 class="our-expertise__section__title">Communication</h3>
-          <p class="our-expertise__section__description">
-            We strive to create communications that can increase media
-            performance. We use everything — words, meanings, stories, art,
-            movies.
-          </p>
-        </article>
+          <article class="our-expertise__section">
+            <img
+              class="our-expertise__section__image"
+              src="/src/images/who-we-are/image2.png"
+              alt="who-we-are"
+            />
+            <h3 class="our-expertise__section__title">Communication</h3>
+            <p class="our-expertise__section__description">
+              We strive to create communications that can increase media
+              performance. We use everything — words, meanings, stories, art,
+              movies.
+            </p>
+          </article>
 
-        <article class="our-expertise__section">
-          <img
-            class="our-expertise__section__image"
-            src="/src/images/who-we-are/image3.png"
-            alt="who-we-are"
-          />
-          <h3 class="our-expertise__section__title">Strategy</h3>
-          <p class="our-expertise__section__description">
-            We create business growth strategies, from the moment of its birth
-            to the achievement of the necessary business indicators.
-          </p>
-        </article>
+          <article class="our-expertise__section">
+            <img
+              class="our-expertise__section__image"
+              src="/src/images/who-we-are/image3.png"
+              alt="who-we-are"
+            />
+            <h3 class="our-expertise__section__title">Strategy</h3>
+            <p class="our-expertise__section__description">
+              We create business growth strategies, from the moment of its birth
+              to the achievement of the necessary business indicators.
+            </p>
+          </article>
+        </div>
       </section>
 
       <section
         class="services"
         id="services"
       >
-        <p class="services__name">services</p>
-        <h2 class="services__title">
-          Air is a full
-          <br />
-          service creative agency
-        </h2>
-        <p class="services__description">
-          Deep analytics, strong strategy and bright creative ideas.
-          <br />
-          <br />
-          We are sure that first-rate job is possible only if all three
-          components are united.
-        </p>
+        <div class="services__top">
+          <p class="services__top__name">services</p>
+          <h2 class="services__top__title">
+            Air is a full
+            <br />
+            service creative agency
+          </h2>
+          <p class="services__top__description">
+            Deep analytics, strong strategy and bright creative ideas.
+            <br />
+            <br />
+            We are sure that first-rate job is possible only if all three
+            components are united.
+          </p>
+        </div>
         <div class="services__cards">
           <article class="services__card">
             <h3 class="services__card__title">001</h3>
@@ -381,21 +384,10 @@
       </section>
 
       <section class="vision">
-        <h2 class="vision__title">
-          Vision,
-          <br />
-          Passion,
-          <br />
-          Results
-        </h2>
+        <h2 class="vision__title">Vision, Passion, Results</h2>
         <p class="vision__description">
-          We are sure that first-rate
-          <br />
-          job is possible only if all
-          <br />
-          three components are
-          <br />
-          united.
+          We are sure that first-rate job is possible only if all three
+          components are united.
         </p>
         <button class="vision__btn">Apply</button>
       </section>
@@ -405,76 +397,80 @@
       class="footer"
       id="hire-us"
     >
-      <h2 class="footer__title">
-        Send us a
-        <br />
-        message
-      </h2>
+      <div class="footer__wrapper">
+        <div class="footer__wrapper__form">
+          <h2 class="footer__title">
+            Send us a
+            <br />
+            message
+          </h2>
 
-      <form
-        action="send-message"
-        class="footer__form"
-      >
-        <input
-          type="email"
-          class="footer__form__input footer__form__input--email"
-        />
-        <input
-          type="text"
-          placeholder="Your name"
-          class="footer__form__input footer__form--name"
-        />
-        <input
-          type="text"
-          placeholder="Your message"
-          class="footer__form__input footer__form__input--message"
-        />
+          <form
+            action="send-message"
+            class="footer__form"
+          >
+            <input
+              type="email"
+              class="footer__form__input footer__form__input--email"
+            />
+            <input
+              type="text"
+              placeholder="Your name"
+              class="footer__form__input footer__form--name"
+            />
+            <input
+              type="text"
+              placeholder="Your message"
+              class="footer__form__input footer__form__input--message"
+            />
 
-        <button class="footer__button">Send</button>
-      </form>
+            <button class="footer__button">Send</button>
+          </form>
+        </div>
 
-      <div
-        class="footer__contact"
-        id="contact-us"
-      >
-        <h2 class="footer__contact__title">Contact us</h2>
+        <div
+          class="footer__contact"
+          id="contact-us"
+        >
+          <h2 class="footer__contact__title">Contact us</h2>
 
-        <div class="footer__contact__contacts">
-          <div class="footer__contact__contacts__links">
-            <p class="footer__contact__contacts__links__text">Call us</p>
-            <a class="footer__contact__contacts__links__adress">654 321 987</a>
-          </div>
-
-          <div class="footer__contact__contacts__links">
-            <p class="footer__contact__contacts__links__text">Visit us</p>
-            <a class="footer__contact__contacts__links__adress">
-              2905 West Drive,
-              <br />
-              Buffalo Grove
-            </a>
-          </div>
-
-          <div class="footer__contact__contacts__medias">
-            <p class="footer__contact__contacts__medias__text">our socials</p>
-            <div class="footer__contact__contacts__medias__network">
-              <a href="#">
-                <img
-                  src="/src/images/social_media_icons/facebook.png"
-                  alt="#"
-                />
+          <div class="footer__contact__contacts">
+            <div class="footer__contact__contacts__links">
+              <p class="footer__contact__contacts__links__text">Call us</p>
+              <a class="footer__contact__contacts__links__adress">
+                654 321 987
               </a>
-              <a href="#">
-                <img
-                  src="/src/images/social_media_icons/twitter.png"
-                  alt="#"
-                />
+            </div>
+
+            <div class="footer__contact__contacts__links">
+              <p class="footer__contact__contacts__links__text">Visit us</p>
+              <a class="footer__contact__contacts__links__adress">
+                2905 West Drive, Buffalo Grove
               </a>
-              <a href="#">
-                <img
-                  src="/src/images/social_media_icons/instagram.png"
-                  alt="#"
-                />
-              </a>
+            </div>
+
+            <div class="footer__contact__contacts__medias">
+              <p class="footer__contact__contacts__medias__text">our socials</p>
+              <div class="footer__contact__contacts__medias__network">
+                <a href="#">
+                  <img
+                    src="/src/images/social_media_icons/facebook.png"
+                    alt="#"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="/src/images/social_media_icons/twitter.png"
+                    alt="#"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="/src/images/social_media_icons/instagram.png"
+                    alt="#"
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </div>
