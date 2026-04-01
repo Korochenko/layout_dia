@@ -25,7 +25,7 @@ let current = 0;
 const bg = document.querySelector('.header__bottom');
 const [btnLeft, btnRight] = document.querySelectorAll('.slider__button');
 function setSlide(index) {
-  bg.style.backgroundImage = `url(${slider[index]})`;
+  bg.style.backgroundImage = `url(${slider[index]}`;
 }
 
 setSlide(0);
