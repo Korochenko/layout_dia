@@ -15,17 +15,21 @@ form.addEventListener('submit', (e) => {
 });
 
 const slider = [
-  '/src/images/slider/header_background.png',
-  '/src/images/slider/slide-img-1.jpg',
-  '/src/images/slider/slide-img-2.jpg',
+  null,
+  'header__bottom--slide-2',
+  'header__bottom--slide-3',
 ];
 
 let current = 0;
 
 const bg = document.querySelector('.header__bottom');
 const [btnLeft, btnRight] = document.querySelectorAll('.slider__button');
+
 function setSlide(index) {
-  bg.style.backgroundImage = `url(${slider[index]}`;
+  bg.className = 'header__bottom';
+  if (slider[index]) {
+    bg.classList.add(slider[index]);
+  }
 }
 
 setSlide(0);
@@ -39,5 +43,3 @@ btnRight.addEventListener('click', () => {
   current = (current + 1) % slider.length;
   setSlide(current);
 });
-
-
