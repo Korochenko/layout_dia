@@ -560,11 +560,10 @@
         </div>
       </div>
     </footer>
-    <script
-      src="/src/scripts/main.js"
-      type="module"
-    >
-            const form = document.querySelector('.footer__form');
+    <script>
+      'use strict';
+
+      const form = document.querySelector('.footer__form');
 
       form.addEventListener('submit', (e) => {
         e.preventDefault();
