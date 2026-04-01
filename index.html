@@ -9,6 +9,10 @@
     />
     <title>Air</title>
     <link
+      rel="icon"
+      href="/src/images/logo/dia-logo.svg"
+    />
+    <link
       rel="stylesheet"
       href="src/styles/main.scss"
     />
@@ -16,7 +20,6 @@
   <!--#endregion -->
   <body>
     <!-- <h1>Dia</h1> -->
-
     <header
       class="header"
       id="header"
@@ -36,38 +39,40 @@
         </div>
 
         <nav class="header__top__navigation">
-          <li class="header__top__navigation__links">
-            <a
-              href="#about-us"
-              class="header__top__navigation__links__link"
-            >
-              About us
-            </a>
-          </li>
-          <li class="header__top__navigation__links">
-            <a
-              href="#services"
-              class="header__top__navigation__links__link"
-            >
-              Services
-            </a>
-          </li>
-          <li class="header__top__navigation__links">
-            <a
-              href="#testimonials"
-              class="header__top__navigation__links__link"
-            >
-              Testimonials
-            </a>
-          </li>
-          <li class="header__top__navigation__links">
-            <a
-              href="#contact-us"
-              class="header__top__navigation__links__link"
-            >
-              Contact Us
-            </a>
-          </li>
+          <ul class="header__top__navigation__list">
+            <li class="header__top__navigation__list__links">
+              <a
+                href="#about-us"
+                class="header__top__navigation__links__link"
+              >
+                About us
+              </a>
+            </li>
+            <li class="header__top__navigation__list__links">
+              <a
+                href="#services"
+                class="header__top__navigation__links__link"
+              >
+                Services
+              </a>
+            </li>
+            <li class="header__top__navigation__list__links">
+              <a
+                href="#testimonials"
+                class="header__top__navigation__links__link"
+              >
+                Testimonials
+              </a>
+            </li>
+            <li class="header__top__navigation__list__links">
+              <a
+                href="#contact-us"
+                class="header__top__navigation__links__link"
+              >
+                Contact Us
+              </a>
+            </li>
+          </ul>
         </nav>
 
         <div>
@@ -134,7 +139,10 @@
         </p>
       </section>
 
-      <section class="our-expertise">
+      <section
+        class="our-expertise"
+        id="our-expertise"
+      >
         <h2 class="our-expertise__title">
           Our
           <br />
@@ -222,7 +230,12 @@
                   alt="s#"
                 />
               </button>
-              <p class="services__card__learn-more__text">Learn more</p>
+              <a
+                href="#our-expertise"
+                class="services__card__learn-more__text"
+              >
+                Learn more
+              </a>
             </div>
           </article>
 
@@ -244,7 +257,12 @@
                   alt="s#"
                 />
               </button>
-              <p class="services__card__learn-more__text">Learn more</p>
+              <a
+                href="#our-expertise"
+                class="services__card__learn-more__text"
+              >
+                Learn more
+              </a>
             </div>
           </article>
 
@@ -266,7 +284,12 @@
                   alt="s#"
                 />
               </button>
-              <p class="services__card__learn-more__text">Learn more</p>
+              <a
+                href="#our-expertise"
+                class="services__card__learn-more__text"
+              >
+                Learn more
+              </a>
             </div>
           </article>
 
@@ -288,7 +311,12 @@
                   alt="s#"
                 />
               </button>
-              <p class="services__card__learn-more__text">Learn more</p>
+              <a
+                href="#our-expertise"
+                class="services__card__learn-more__text"
+              >
+                Learn more
+              </a>
             </div>
           </article>
         </div>
@@ -389,7 +417,7 @@
           We are sure that first-rate job is possible only if all three
           components are united.
         </p>
-        <button class="vision__btn">Apply</button>
+        <a href="#hire-us" class="vision__btn">Apply</a>
       </section>
     </main>
 
@@ -412,17 +440,20 @@
             <input
               type="email"
               class="footer__form__input footer__form__input--email"
+              required
             />
             <input
               type="text"
               placeholder="Your name"
+              required
               class="footer__form__input footer__form--name"
             />
-            <input
+            <textarea
               type="text"
+              rows="3"
               placeholder="Your message"
               class="footer__form__input footer__form__input--message"
-            />
+            ></textarea>
 
             <button class="footer__button">Send</button>
           </form>
@@ -437,14 +468,21 @@
           <div class="footer__contact__contacts">
             <div class="footer__contact__contacts__links">
               <p class="footer__contact__contacts__links__text">Call us</p>
-              <a class="footer__contact__contacts__links__adress">
+              <a
+                href="tel:654321987"
+                class="footer__contact__contacts__links__adress"
+              >
                 654 321 987
               </a>
             </div>
 
             <div class="footer__contact__contacts__links">
               <p class="footer__contact__contacts__links__text">Visit us</p>
-              <a class="footer__contact__contacts__links__adress">
+              <a
+                href="https://maps.google.com/?q=2905+West+Drive+Buffalo+Grove"
+                target="_blank"
+                class="footer__contact__contacts__links__adress"
+              >
                 2905 West Drive, Buffalo Grove
               </a>
             </div>
@@ -484,11 +522,36 @@
           />
         </a>
         <div class="footer__links__navigation">
-          <p class="footer__links__navigation__link">About us</p>
-          <p class="footer__links__navigation__link">Home</p>
-          <p class="footer__links__navigation__link">Work</p>
-          <p class="footer__links__navigation__link">Services</p>
-          <p class="footer__links__navigation__link">Contact us</p>
+          <a
+            href="#about-us"
+            class="footer__links__navigation__link"
+          >
+            About us
+          </a>
+          <a
+            href="#header"
+            class="footer__links__navigation__link"
+          >
+            Home
+          </a>
+          <a
+            href="#our-expertise"
+            class="footer__links__navigation__link"
+          >
+            Work
+          </a>
+          <a
+            href="#services"
+            class="footer__links__navigation__link"
+          >
+            Services
+          </a>
+          <a
+            href="#contact-us"
+            class="footer__links__navigation__link"
+          >
+            Contact us
+          </a>
         </div>
       </div>
     </footer>
