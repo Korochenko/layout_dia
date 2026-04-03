@@ -42,5 +42,9 @@
     "tests": {
       "backstop": false
     }
+  },
+  "dependencies": {
+    "@fontsource/open-sans": "^5.2.7",
+    "@fontsource/poppins": "^5.2.7"
   }
 }
