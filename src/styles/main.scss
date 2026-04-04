@@ -7,9 +7,11 @@
   padding: 0;
   font-family: 'Poppins';
   list-style-type: none;
+  box-sizing: border-box;
 }
 
 html {
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -19,7 +21,6 @@ body {
   font-family: 'Poppins';
   background-color: #eee;
   overflow-x: hidden;
-
 }
 
 a {
@@ -51,19 +52,25 @@ textarea {
 
 /* #region header */
 .header {
-  width: 100%;
   height: 100vh;
-  padding: 21px 20px 24px;
+  padding: 21px 21px 0 21px;
+
   display: flex;
   justify-content: center;
-
-  box-sizing: border-box;
 
   border-radius: 0 0 16px 16px;
 
   background-color: #2c2c2c;
 
   margin-bottom: 120px;
+
+  @include on-tablet {
+  }
+
+  @include on-small-desktop {
+    width: 100%;
+    padding: 21px 20px 24px;
+  }
 
   &__box {
     max-width: 1150px;
@@ -172,6 +179,8 @@ textarea {
   }
 
   &__middle {
+    width: 100%;
+    font-family: 'Poppins';
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -732,7 +741,7 @@ textarea {
   flex-direction: column;
   align-items: center;
   background-image: url(/src/images/Shapes.png);
-  width: 100vw;
+  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 72px;
@@ -801,6 +810,10 @@ textarea {
   background-color: #2c2c2c;
   border-radius: 16px 16px 0 0;
   padding: 72px 20px 80px 20px;
+
+  @include on-small-desktop {
+    padding: 72px 20px 80px 20px;
+  }
 
   &__wrapper {
     max-width: 1150px;
